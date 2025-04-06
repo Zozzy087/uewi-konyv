@@ -58,15 +58,16 @@
 	<script type="text/javascript">window.readerConfigLoaded = true;</script>
 
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(function(reg) {
-          console.log('Service Worker regisztrálva:', reg.scope);
-        }).catch(function(error) {
-          console.error('Service Worker hiba:', error);
-        });
-    }
-  </script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg) {
+        console.log('Service Worker regisztrálva:', reg.scope);
+      }).catch(function(error) {
+        console.error('Service Worker hiba:', error);
+      });
+  }
+</script>
+
 
 </body>
 
