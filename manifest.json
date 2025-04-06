@@ -1,0 +1,15 @@
+{
+  "name": "Uewi Interaktív Könyv",
+  "short_name": "Uewi Könyv",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "files/shot.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}
