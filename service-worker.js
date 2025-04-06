@@ -1,15 +1,13 @@
 const CACHE_NAME = 'uewi-konyv-cache-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/style/style.css',
-  '/javascript/config.js',
-  '/javascript/fliphtml5-book.min.js',
-  '/javascript/jquery-3.6.0.min.js',
-  '/slide_javascript/slide.js',
-  '/files/icon.png',
-  '/files/logo.png',
-  // Ide add hozzá a további szükséges fájlokat
+  'index.html',
+  'style/style.css',
+  'javascript/config.js',
+  'javascript/fliphtml5-book.min.js',
+  'javascript/jquery-3.6.0.min.js',
+  'slide_javascript/slide.js',
+  'files/icon.png',
+  'files/logo.png'
 ];
 
 self.addEventListener('install', function(event) {
@@ -29,3 +27,4 @@ self.addEventListener('fetch', function(event) {
       })
   );
 });
+
