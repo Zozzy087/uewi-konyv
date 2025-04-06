@@ -1,4 +1,4 @@
-const CACHE_NAME = 'uewi-cache-v2';
+const CACHE_NAME = 'uewi-full-cache-v1';
 const urlsToCache = [
   'index.html',
   'manifest.json',
@@ -13,7 +13,6 @@ const urlsToCache = [
   'files/logo.png'
 ];
 
-// Telepítés: fájlok cache-elése
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function(cache) {
@@ -22,7 +21,6 @@ self.addEventListener('install', function(event) {
   );
 });
 
-// Kérések kezelése
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {
