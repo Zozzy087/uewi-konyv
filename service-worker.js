@@ -7,7 +7,7 @@ const urlsToCache = [
   '/javascript/fliphtml5-book.min.js',
   '/javascript/jquery-3.6.0.min.js',
   '/slide_javascript/slide.js',
-  '/files/shot.jpg',
+  '/files/icon.png',
   '/files/logo.png',
   // Ide add hozzá a további szükséges fájlokat
 ];
